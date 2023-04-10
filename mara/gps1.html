@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gps1.css">
+</head>
+<body>
+    <h1>Maasai Mara National Reserve</h1>
+	<p>Click the button to get directions to the park:</p>
+
+	<button onclick="getDirections()">Get Directions</button>
+    <button><a href="mara.html">BACK</a></button>
+
+	<p id="navigate"></p>
+
+	<script>
+		function getDirections() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showDirections);
+			} else {
+				alert("Geolocation is not supported by this browser.");
+			}
+		}
+
+		function showDirections(position) {
+			var latitude = position.coords.latitude;
+			var longitude = position.coords.longitude;
+			var url = "https://www.google.com/maps/dir/?api=1&destination=Maasai+Mara+National+Reserve&destination_place_id=ChIJn6lyR9XfXRgRlSxlJP3FLKw&travelmode=driving&origin=" + latitude + "," + longitude;
+			window.location.href = url;
+		}
+	</script>
+</body>
+</html>

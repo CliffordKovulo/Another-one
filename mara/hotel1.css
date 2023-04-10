@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #131a22;
+    color: #eee;
+  }
+  
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* Hotels list styles */
+  .hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hotel {
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #192734;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .hotel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  }
+  
+  .hotel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .hotel h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .hotel p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #eee;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  button a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+  }
+
+  button:hover {
+    background-color: #388E3C;
+    text-shadow: none;
+  }
+
+  #back {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+
+  #back:hover{
+    background-color: #388E3C;
+    text-shadow: none;
+  }
+
+  #back a{
+    text-decoration: none;
+    color: white;
+  }

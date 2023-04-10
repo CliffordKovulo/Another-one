@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mara.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="btn3">
+                
+            </div>
+          <div class="slide" style="background-image: url('big-five.jpg');">
+            <div class="head">
+                <h1>MAASAI MARA NATIONAL PARK</h1>
+            </div>
+        
+            <div class="btn1">
+                <button id="btn1"><a href="gps1.html">Location details</a> <span class="tooltip">GPS COORDINATES</span> </button>
+                <button id="btn2"><a href="weather.html">Weather condition</a></button>
+                <button id="btn3"><a href="hotel1.html">ACCOMODATION</a></button>
+            </div>
+            <div class="slide-container">
+              
+              <p>Discover the Wonders of the Wild with Us</p>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('Sunset.jpg');">
+            <div class="head">
+                <h1>MAASAI MARA NATIONAL PARK</h1>
+            </div>
+            
+            <div class="btn1">
+              <button id="btn1"><a href="gps1.html">Location details</a> <span class="tooltip">GPS COORDINATES</span> </button>
+                <button id="btn2"><a href="weather.html">Weather condition</a></button>
+                <button id="btn3"><a href="hotel1.html">ACCOMODATION</a></button>
+            </div>
+            <div class="slide-container">
+              
+              <p>Where Wildlife Thrives</p>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('bird.jpg');">
+            <div class="head">
+                <h1>MAASAI MARA NATIONAL PARK</h1>
+            </div>
+            
+            <div class="btn1">
+              <button id="btn1"><a href="gps1.html">Location details</a> <span class="tooltip">GPS COORDINATES</span> </button>
+                <button id="btn2"><a href="weather.html">Weather condition</a></button>
+                <button id="btn3"><a href="hotel1.html">ACCOMODATION</a></button>
+            </div>
+            <div class="slide-container">
+              
+              <p>Get Closer to Nature</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 10000); // Change image every 5 seconds
+    }
+</script>
+</body>
+</html>
